@@ -1,0 +1,10 @@
+<div class="main-container">
+  <h2><%= @article.title %></h2>
+  <p id="content"><%= @article.content %></p>
+
+  <p><%= link_to 'back to all articles', articles_path %></p>
+  <p><%= link_to 'delete this article', article_path(@article), method: :delete, data: {confirm: "You sure mate?"} %></p>
+
+
+  <p><%= link_to 'edit this task', edit_article_path %></p>
+</div>
